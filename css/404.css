@@ -1,0 +1,92 @@
+@import url(./font.css);
+@import url(./style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Firs Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #111A45;
+    border-radius: 50px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+a {
+    font-size: 25px;
+    padding: 15px 40px;
+    border-radius: 40px;
+    color: #fff;
+    transition: 0.5s
+}
+
+a:hover {
+    box-shadow: 0 0 15px orange;
+    text-shadow: 0 0 5px orange;
+}
+
+/* @media screen and (max-width: 950px) {
+    h1 {
+        font-size: 264px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+} */
+
+@media screen and (max-width: 570px) {
+    .container {
+        gap: 20px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 150px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 8px;
+        padding: 12px 28px;
+        border-radius: 28px;
+    }
+}
